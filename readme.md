@@ -11,6 +11,8 @@ npm  : 6.5.0
 Laravel : 5.7.19
 
 ### Installing
-Step 1. clone the project.
-Step 2. Install composer.
-Step 3. Run composer install to install all dependency packages.
+<ol>
+    <li> clone the project. </li>
+    <li> Install composer. </li>
+    <li> Execute <b>composer install</b> command to install all dependency packages.. </li>
+</ol>
