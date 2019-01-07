@@ -22,6 +22,16 @@
     </div>
     @endif
 
+    @if ($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+    @endif
+
     <div class="row">
         <form class="col s12" method="POST" action="{{ route('createPhoto') }}" enctype="multipart/form-data">
             {{ csrf_field() }}
