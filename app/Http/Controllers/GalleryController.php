@@ -95,7 +95,7 @@ class GalleryController extends Controller
     public function show($id)
     {
         $gallery = Galleries::find($id);
-        $photos = Photos::where('gallery_id', $id)->get();
+        $photos = $gallery->photos()->get();
         return view('gallery.show', compact('gallery', 'photos'));
     }
 }
